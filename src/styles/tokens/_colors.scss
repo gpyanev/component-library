@@ -1,0 +1,21 @@
+:root {
+  color-scheme: light;
+
+  --color-primary: #007bff;
+  --color-primary-hover: #0056b3;
+  --color-background: #ffffff;
+  --color-surface: #ffffff;
+  --color-text: #1f2937;
+  --color-border: #d1d5db;
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  --color-primary: #60a5fa;
+  --color-primary-hover: #93c5fd;
+  --color-background: #111827;
+  --color-surface: #1f2937;
+  --color-text: #f9fafb;
+  --color-border: #4b5563;
+}
