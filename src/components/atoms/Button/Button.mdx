@@ -5,21 +5,49 @@ import * as ButtonStories from './Button.stories';
 
 # Button
 
-The `Button` component is used for triggering actions or events. It comes with multiple variants and states.
+Use `Button` to trigger an action or submit a form. It supports primary, secondary,
+and outline variants, and accepts the native attributes of an HTML button.
 
-## Overview
+## Variants
 
-Here is the default **Primary** button in action:
+Choose a variant based on the button's role in the interface.
 
 <Canvas of={ButtonStories.Primary} />
 
-## Properties & Controls
+### Secondary
 
-You can interact with the controls below to test different props dynamically:
+Use a secondary button for an action that is available but less prominent than
+the primary action.
+
+<Canvas of={ButtonStories.Secondary} />
+
+### Outline
+
+Use the outline variant when a lower-emphasis action should remain easy to find.
+
+<Canvas of={ButtonStories.Outline} />
+
+## Disabled state
+
+Set the native `disabled` attribute when an action is temporarily unavailable.
+Disabled buttons cannot be activated.
+
+<Canvas of={ButtonStories.Disabled} />
+
+## Props
+
+The `label` prop provides the button's text. The optional `variant` prop accepts
+`primary` (the default), `secondary`, or `outline`. All standard button attributes,
+including `type`, `disabled`, and `aria-*`, are also supported.
+
+Use the controls to inspect and change the available props:
 
 <Controls of={ButtonStories.Primary} />
 
-## Usage Guidelines
+## Accessibility
 
-- **Primary Action**: Use the primary variant for the main call to action on a page.
-- **Accessibility**: Always provide clear text labels so screen readers can interpret the button's action.
+- Use a concise label that clearly describes the action.
+- Set `type="button"` for buttons that should not submit a form; otherwise, a
+  button inside a form defaults to submitting it.
+- Use `disabled` only when the action is unavailable, and make the reason clear
+  in the surrounding interface.

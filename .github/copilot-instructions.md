@@ -120,7 +120,10 @@ export const Primary: Story = {
 
 - **Testing Engine**: Vitest runs in **Browser Mode** using **Playwright/Chromium** (not `jsdom`).
 - **Test Implementation**: Write interaction and visual logic tests using `@testing-library/react` inside `{ComponentName}.test.tsx`.
-- **Code Style**:
+- **Code Style & Formatting**:
+  - **Prettier Compliance**: All generated code must strictly adhere to the formatting rules defined in the project's `.prettierrc` configuration file.
+  - **ESLint Compliance**: All generated code must conform to the linting rules and best practices enforced in the project's ESLint configuration (`.eslintrc` / `eslint.config.js`).
+  - **Consistency**: Ensure syntax, indentation, quote styles, and trailing commas match the local project setup precisely without causing lint errors or requiring manual reformatting.
   - Favor named exports (`export const Button = ...`) over default exports.
   - Strict TypeScript rules (avoid `any`, enforce strict checks).
 - **Git Commit Messages**: Follow Conventional Commits format (`feat:`, `fix:`, `chore:`, `docs:`, `refactor:`).

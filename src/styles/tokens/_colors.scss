@@ -7,6 +7,12 @@
   --color-surface: #ffffff;
   --color-text: #1f2937;
   --color-border: #d1d5db;
+  --color-badge-success-background: #dcfce7;
+  --color-badge-success-text: #166534;
+  --color-badge-warning-background: #fef3c7;
+  --color-badge-warning-text: #92400e;
+  --color-badge-danger-background: #fee2e2;
+  --color-badge-danger-text: #991b1b;
 }
 
 [data-theme='dark'] {
@@ -18,4 +24,10 @@
   --color-surface: #1f2937;
   --color-text: #f9fafb;
   --color-border: #4b5563;
+  --color-badge-success-background: #14532d;
+  --color-badge-success-text: #bbf7d0;
+  --color-badge-warning-background: #78350f;
+  --color-badge-warning-text: #fde68a;
+  --color-badge-danger-background: #7f1d1d;
+  --color-badge-danger-text: #fecaca;
 }
