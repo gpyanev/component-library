@@ -1,0 +1,25 @@
+import { Meta, Canvas, Controls } from '@storybook/addon-docs/blocks';
+import * as ButtonStories from './Button.stories';
+
+<Meta of={ButtonStories} />
+
+# Button
+
+The `Button` component is used for triggering actions or events. It comes with multiple variants and states.
+
+## Overview
+
+Here is the default **Primary** button in action:
+
+<Canvas of={ButtonStories.Primary} />
+
+## Properties & Controls
+
+You can interact with the controls below to test different props dynamically:
+
+<Controls of={ButtonStories.Primary} />
+
+## Usage Guidelines
+
+- **Primary Action**: Use the primary variant for the main call to action on a page.
+- **Accessibility**: Always provide clear text labels so screen readers can interpret the button's action.
